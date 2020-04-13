@@ -1,12 +1,38 @@
 <%- include('header.html'); -%>
 <%- include('index.html'); -%>
 
-<div class="row">
+<div class="row justify-content-md-center">
+    <div class="col-md-auto">
+
+    <div class="card mb-6" style="max-height: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-6">
+            <img src="<%= productImage %>" class="card-img">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title"><%= productName %></h5>
+              <p class="card-text"> 
+                <p>KCal: <%= productKCal100 %></p>
+                <p>Grasas: <%= productFat100 %></p>
+                <p>Hidratos de carbono: <%= productCH100 %></p>
+                <p>Proteinas: <%= productProtein100 %></p>
+                <p>Sal: <%= productSalt100 %></p>
+              </p>
+              <p class="card-text"><small class="text-muted">Datos obtenidos de openfoodfacts.org</small></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+<!--
     <div class="col-4">
-        <h1><%= productName %></h1>
+        <h3></h3>
         <img src="<%= productImage %>">
     </div>
-    <div class="col-8">
+    <div class="col-4">
+        <h3>Datos del producto</h3>
         <p>KCal: <%= productKCal100 %></p>
         <p>Grasas: <%= productFat100 %></p>
         <p>Hidratos de carbono: <%= productCH100 %></p>
@@ -14,5 +40,6 @@
         <p>Sal: <%= productSalt100 %></p>
 
     </div>
-    
+</div>
+    -->
 <%- include('footer.html'); -%>
