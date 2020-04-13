@@ -22,7 +22,7 @@ exports.get = function(req, res, body){
                                 'productCH100':productCH100, 'productProtein100':productProtein100, 'productSalt100':productSalt100});
 
         }else{
-            res.send("404 Product not found");
+            res.render('error');
         }
      });
 };
