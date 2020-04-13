@@ -1,0 +1,18 @@
+<%- include('header.html'); -%>
+<%- include('index.html'); -%>
+
+<div class="row">
+    <div class="col-4">
+        <h1><%= productName %></h1>
+        <img src="<%= productImage %>">
+    </div>
+    <div class="col-8">
+        <p>KCal: <%= productKCal100 %></p>
+        <p>Grasas: <%= productFat100 %></p>
+        <p>Hidratos de carbono: <%= productCH100 %></p>
+        <p>Proteinas: <%= productProtein100 %></p>
+        <p>Sal: <%= productSalt100 %></p>
+
+    </div>
+    
+<%- include('footer.html'); -%>

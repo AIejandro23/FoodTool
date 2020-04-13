@@ -1,0 +1,15 @@
+<%- include('header.html'); -%>
+
+    <div style="margin-top: 2%;">
+        <h1 class="text-center">Food Tool</h1>
+        <form action="/food">
+            <div class="form-group">
+            <label for="codeBar">Código de barras</label>
+            <input type="text" name="codeBar" class="form-control" id="codeBarId" aria-describedby="codeBar">
+            </div>
+            <button type="submit" class="btn btn-primary">Buscar</button>
+
+        </form>
+    </div>
+
+<%- include('footer.html'); -%>
