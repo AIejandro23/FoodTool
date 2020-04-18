@@ -1,5 +1,4 @@
 <%- include('header.html'); -%>
-<div id="interactive" class="viewport"></div>
 
 <div class="col col-lg-2"></div>
 <div class="col-md-auto">
@@ -11,6 +10,7 @@
             <input type="text" name="codeBar" class="form-control" id="codeBarId" aria-describedby="codeBar">
         </div>
         <button type="submit" class="btn btn-primary mb-2">Buscar</button>
+        <div id="interactive" class="viewport"></div>
 
     </form>
 </div>
@@ -25,8 +25,8 @@
          // Or '#yourElement' (optional)
         target: document.querySelector('#interactive') ,
         constraints: {
-            width: 640,
-            height: 480,
+            width: 400,
+            height: 350,
             facing: "environment"
         }
   },
