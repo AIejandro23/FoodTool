@@ -20,6 +20,6 @@ app.get('/inventario', function(req, res){
   res.render('inventario', {title : 'Inventario'});
 });
 
-app.listen(3000, function () {
+app.listen(process.env.PORT, function () {
   console.log('Example app listening on port 3000!');
 });
