@@ -51,7 +51,7 @@
         Quagga.onDetected(function(result) {
             var code = result.codeResult.code;
             console.log('Codigo detectado ' + code)
-            window.location.replace(window.location.href + '/food?codeBar=' + code);
+            window.location.href = window.location.href + '/food?codeBar=' + code);
 
             });
     </script>
