@@ -18,11 +18,11 @@ exports.get = function(req, res, body){
             var productProtein100 = bodyJSON.product.nutriments.proteins_value;
             var productSalt100 = bodyJSON.product.nutriments.salt_value;
 
-            res.render('food', {'productName':productName, 'productImage':productImage, 'productKCal100':productKCal100,'productFat100': productFat100,
-                                'productCH100':productCH100, 'productProtein100':productProtein100, 'productSalt100':productSalt100});
+            res.render('food', {'title':'Food', 'productName':productName, 'productImage':productImage, 'productKCal100':productKCal100,
+            'productFat100': productFat100, 'productCH100':productCH100, 'productProtein100':productProtein100, 'productSalt100':productSalt100});
 
         }else{
-            res.render('error');
+            res.render('error',{title: '404 Not found'});
         }
      });
 };

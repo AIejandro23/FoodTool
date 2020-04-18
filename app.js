@@ -11,13 +11,13 @@ app.set("view engine", "html");
 
 
 app.get('/', function(req, res){
-    res.render('index');
+    res.render('index', {'title': 'Inicio'});
 });
 
 app.get('/food/', food.get);
 
 app.get('/inventario', function(req, res){
-  res.render('inventario');
+  res.render('inventario', {title : 'Inventario'});
 });
 
 app.listen(3000, function () {

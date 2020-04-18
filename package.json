@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "live": "nodemon server.js"
+    "live": "nodemon app.js"
   },
   "author": "Alejandrö",
   "license": "ISC",
