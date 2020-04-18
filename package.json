@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "Alejandrö",
   "license": "ISC",
@@ -13,5 +14,9 @@
     "ejs": "^3.0.2",
     "express": "^4.17.1",
     "request": "^2.88.2"
+  },
+  
+  "engines": {
+    "node": "8.x"
   }
 }
